@@ -1,0 +1,3 @@
+[submodule "hal/uc"]
+	path = hal/uc
+	url = git@github.com:chintal/ebs-hal-uc-msp430f5xx.git
