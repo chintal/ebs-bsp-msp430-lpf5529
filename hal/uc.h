@@ -72,15 +72,6 @@
  * location is `peripherals/<driver>_impl.h`
  */
 
-#include "uc/map.h"
-#include "uc/types.h"
-#include "uc/id.h"
-// #include "hal_uc_adc.h"
-#include "uc/core.h"
-#include "uc/entropy.h"
-#include "uc/gpio.h"
-#include "uc/uart.h"
-#include "uc/timer.h"
-#include "uc/usb.h"
+#include "uc/all.h"
 
 #endif

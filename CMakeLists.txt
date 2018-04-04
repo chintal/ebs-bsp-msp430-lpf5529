@@ -1,3 +1,4 @@
 
 
 ADD_SUBDIRECTORY(hal)
+ADD_SUBDIRECTORY(drivers)
