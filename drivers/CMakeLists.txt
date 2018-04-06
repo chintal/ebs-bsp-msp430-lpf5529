@@ -1,3 +1,3 @@
 
 
-ADD_SUBDIRECTORY(led)
+ADD_SUBDIRECTORY(led/src)
