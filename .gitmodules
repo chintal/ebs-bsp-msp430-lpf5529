@@ -1,6 +1,3 @@
-[submodule "hal/uc"]
-	path = hal/uc
-	url = git@github.com:chintal/ebs-hal-uc-msp430f5xx.git
 [submodule "drivers/led"]
 	path = drivers/led
 	url = git@github.com:chintal/ebs-driver-led.git
