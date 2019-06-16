@@ -38,5 +38,6 @@
 #define BOARD_H
 
 #include "board_lp5529.h"
+#include "uc/uc.h"
 
 #endif
