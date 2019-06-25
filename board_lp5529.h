@@ -75,16 +75,26 @@
     * @name Backchannel Interface Constants
     */
     /**@{*/ 
-    #define BCI_UART                  1
-    #define BCI_USBCDC                2
+    #define BCI_UART                1
+    #define BCI_USBCDC              2
     /**@}*/ 
     /**
     * @name Backchannel Interface Configuration
     */
     /**@{*/ 
-    #define BOARD_HAS_BCIFACE         1
-    #define BOARD_BCIFACE_TYPE        BCI_USBCDC
-    #define BOARD_BCIFACE_INTFNUM     2
+    #define BOARD_HAS_BCIFACE       1
+    
+    #ifndef APP_BCIFACE_USE_USBCDC
+    #define APP_BCIFACE_USE_USBCDC    1
+    #endif
+    
+    #if APP_BCIFACE_USE_USBCDC
+        #define BOARD_BCIFACE_TYPE        BCI_USBCDC
+        #define BOARD_BCIFACE_INTFNUM     2
+    #else
+        #define BOARD_BCIFACE_TYPE        BCI_UART
+        #define BOARD_BCIFACE_INTFNUM     1
+    #endif
     /**@}*/ 
 /**@}*/ 
 
